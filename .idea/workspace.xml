@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9bc5de6d-f8bf-4884-8adf-38fc446c9df8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cLqY1OoB8H3IQV1k8i3vrWtBYq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jsoup-1.13.1.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Action" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Action" />
+      <module name="Parser v3.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Action" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bc5de6d-f8bf-4884-8adf-38fc446c9df8" name="Default Changelist" comment="" />
+      <created>1590318264768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590318264768</updated>
+      <workItem from="1590318266157" duration="32081000" />
+      <workItem from="1590429400026" duration="2848000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="617" y="214" key="#Inspections" timestamp="1590319412159">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="214" key="#Inspections/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590319412159" />
+    <state x="617" y="214" key="#Project_Structure" timestamp="1590318273360">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="214" key="#Project_Structure/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590318273360" />
+    <state x="729" y="297" key="FileChooserDialogImpl" timestamp="1590318852073">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="729" y="297" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590318852073" />
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1590433388845">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590433388845" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1590433388845">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590433388845" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1590433388845">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590433388845" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1590433388845">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590433388845" />
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1590356631121">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590356631121" />
+    <state width="2005" height="376" key="GridCell.Tab.1.center" timestamp="1590356631121">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.center/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590356631121" />
+    <state width="2005" height="376" key="GridCell.Tab.1.left" timestamp="1590356631121">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.left/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590356631121" />
+    <state width="2005" height="376" key="GridCell.Tab.1.right" timestamp="1590356631121">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.right/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590356631121" />
+    <state x="555" y="210" key="Maven.ArtifactSearchDialog" timestamp="1590342518994">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="555" y="210" key="Maven.ArtifactSearchDialog/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590342518994" />
+    <state x="505" y="130" key="SettingsEditor" timestamp="1590319239651">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="505" y="130" key="SettingsEditor/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590319239651" />
+    <state x="840" y="333" key="chooseDestDirectoryDialog" timestamp="1590319439688">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="840" y="333" key="chooseDestDirectoryDialog/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590319439688" />
+    <state x="754" y="449" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590318465675">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="754" y="449" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590318465675" />
+    <state x="755" y="321" key="extract.method.dialog" timestamp="1590353327450">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="755" y="321" key="extract.method.dialog/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590353327450" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1590344764213">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1590344764213" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Parser_v3_0$Action.ic" NAME="Action Coverage Results" MODIFIED="1590326018049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.company.*</FILTER>
+    </SUITE>
+  </component>
+</project>
