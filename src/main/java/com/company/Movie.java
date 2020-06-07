@@ -12,18 +12,19 @@ import java.io.IOException;
 public class Movie {
 
     String title, time, chan;
-    String rate;
-    static String rt;
+    double rating;
+    static double r;
 
     Movie(String n, String t, String c) throws IOException {
-        getData(n + " фильм");
         title = n;
         time = t;
         chan = c;
-        rate = rt;
+        int y = 0;
+        getData(n + " фильм", y);
+        rating = r;
     }
 
-    public static void getData(String mt) throws IOException {
+    public static double getData(String mt, int y) throws IOException {
         {
 
             Connection.Response movie = Jsoup.connect("https://google.com/search?q=" + mt)
@@ -37,11 +38,11 @@ public class Movie {
             Document moviedoc = Jsoup.parse(input, "UTF-8");//
 
             Elements movieData = moviedoc.getElementsContainingText("kinopoisk")
-                .select("div[class='rc']").eq(0);
+                    .select("div[class='rc']").eq(y);
 
             for (Element x : movieData) {
                 try {
-                    rt = x.getElementsContainingText("Рейтинг")
+                    String rt = x.getElementsContainingText("Рейтинг")
                             .select("div[class*='dhIWPd f']").text();
                     char[] tempPl = rt.toCharArray();
                     char[] copyPl = new char[6];
@@ -55,11 +56,15 @@ public class Movie {
                         j++;
                     }
                     rt = String.valueOf(copyPl);
-                }
-                catch (ArrayIndexOutOfBoundsException e){
-                    rt = "н/д";
+
+                    String[] str = rt.split("/");
+                    r = Double.parseDouble(str[0].replaceAll(",", "."));
+                } catch (ArrayIndexOutOfBoundsException e) {
+                    y++;
+                    getData(mt, y);
                 }
             }
         }
+        return r;
     }
 }

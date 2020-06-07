@@ -12,7 +12,6 @@ public class ExcelFile {
     static int rownum;
 
 
-
     public static void createExcelFile() throws IOException {
 
         wb = new XSSFWorkbook();
@@ -33,16 +32,16 @@ public class ExcelFile {
             cell.setCellStyle(headerCellStyle);
         }
 
-        rownum = 1; //номер строки следующей, чтобы инфу про кино вставлять
+        rownum = 1;
 
         File data = new File("C:/Users/User/Documents/movies.xlsx");
         if (data.createNewFile()) {
             System.out.println("File created: " + data.getName());
         } else {
-            System.out.println("File already exists.");
+            System.out.println("File already exists: " + data.getName());
             data.delete();
             data.createNewFile();
-            System.out.println("The existing file was rewritten.");
+            System.out.println("The existing file was rewritten: " + data.getName());
         }
 
         FileOutputStream fo = new FileOutputStream(data);
@@ -52,14 +51,32 @@ public class ExcelFile {
 
     public static void writeExcel(Movie m) throws IOException {
         FileOutputStream fo = new FileOutputStream("C:/Users/User/Documents/movies.xlsx");
-//        int rows = sheet.getPhysicalNumberOfRows();
+
         Row row = sheet.createRow(rownum);
-//        if(row == null) {
-//            row = sheet.createRow(rows);
-//        }
-//        else row = sheet.createRow((rows+1));
+
+        CellStyle low = wb.createCellStyle();
+        low.setFillForegroundColor(IndexedColors.CORAL.getIndex());
+        low.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+
+        CellStyle mid = wb.createCellStyle();
+        mid.setFillForegroundColor(IndexedColors.GOLD.getIndex());
+        mid.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+
+        CellStyle high = wb.createCellStyle();
+        high.setFillForegroundColor(IndexedColors.LIME.getIndex());
+        high.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+
         row.createCell(0).setCellValue(m.title);
-        row.createCell(1).setCellValue(m.rate);
+
+        Cell cell = row.createCell(1);
+        cell.setCellValue(m.rating);
+        if (m.rating < 5)
+            cell.setCellStyle(low);
+        else if (5 <= m.rating & m.rating < 7.5)
+            cell.setCellStyle(mid);
+        else
+            cell.setCellStyle(high);
+
         row.createCell(2).setCellValue(m.chan);
         row.createCell(3).setCellValue(m.time);
         rownum++;

@@ -10,7 +10,4 @@ public class Action {
         ExcelFile.createExcelFile();
         Progr.getProgr();
     }
-
-
-
 }

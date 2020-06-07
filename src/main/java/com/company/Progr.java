@@ -13,7 +13,6 @@ public class Progr {
     static String mtitle;
 
 
-
     public static void getProgr() throws IOException {
 
         Document doc = Jsoup.connect("http://tv.mail.ru/ekaterinburg/general/")
@@ -39,22 +38,15 @@ public class Progr {
 
                     channel = String.valueOf(copyCh);
                 }
-                System.out.println(channel);
             }
             for (Element sp : Name) {
                 time = sp.text().substring(0, 5);
                 mtitle = sp.text().substring(5);
                 if (mtitle.contains("серия")) continue;
                 Movie x = new Movie(mtitle, time, channel);
-                String total = x.title + "\n" + x.rate + "\n" + x.time + "\n" + x.chan + "\n";
                 ExcelFile.writeExcel(x);
-                System.out.println(total);
-                WriteToFile("tvprogr", total);
             }
         }
-        String title = doc.title();
-        System.out.println(title);
-
     }
 
     public static void CreateFile(String s) {
@@ -63,16 +55,17 @@ public class Progr {
             if (data.createNewFile()) {
                 System.out.println("File created: " + data.getName());
             } else {
-                System.out.println("File already exists.");
+                System.out.println("File already exists: " + s);
                 data.delete();
                 data.createNewFile();
-                System.out.println("The existing file was rewritten.");
+                System.out.println("The existing file was rewritten: " + s);
             }
         } catch (IOException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
     }
+
     public static void WriteToFile(String n, String s) {
         try {
             FileWriter myWriter = new FileWriter("C:/Users/User/Documents/" + n + ".txt", true);
@@ -82,8 +75,8 @@ public class Progr {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-
     }
+
     public static void cleanFile(String n) {
         try {
             FileWriter myWriter = new FileWriter("C:/Users/User/Documents/" + n + ".txt");
